@@ -1,0 +1,9 @@
+[Core]
+Name = INFINITE
+Module = infinite
+
+[Documentation]
+Description = Send link to an infinite loop gif whenever the phrase 'infinite loop' is said anywhere in chat
+
+[Python]
+Version = 3
