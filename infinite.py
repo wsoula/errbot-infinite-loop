@@ -1,9 +1,9 @@
-from errbot import BotPlugin, botcmd, arg_botcmd
+from errbot import BotPlugin, re_botcmd, arg_botcmd
 import random
 import re
 
 class Infinite(BotPlugin):
-    @re_botcmd(pattern=r"infinite loop", prefixed=False, flags=re.IGNORECASE
+    @re_botcmd(pattern=r"infinite loop", prefixed=False, flags=re.IGNORECASE)
     def listen_for_infinite_loop(self, msg, match):
         GIF_URLS= [
             "http://i.imgur.com/9pXTSnI.gif",
@@ -108,5 +108,5 @@ class Infinite(BotPlugin):
             "http://i.kinja-img.com/gawker-media/image/upload/s--EDrOwWt_--/c_fit,fl_progressive,q_80,w_636/1395820824140242349.gif",
             "http://i.kinja-img.com/gawker-media/image/upload/s--2uUb28Wf--/c_fit,f_auto,fl_progressive,q_80,w_320/a7ivhrf1ehk8ev9paiyw.gif",
             "https://i.kinja-img.com/gawker-media/image/upload/s--bu1J-vuP--/c_scale,fl_progressive,q_80,w_800/kset0dgzq20xamvi4td3.gif"
-          ]
-          return random.choice(GIF_URLS)
+        ]
+        return random.choice(GIF_URLS)
