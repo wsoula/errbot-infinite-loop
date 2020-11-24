@@ -2,7 +2,10 @@ from errbot import BotPlugin, re_botcmd, arg_botcmd
 import random
 import re
 
+
 class Infinite(BotPlugin):
+    """Plugin to return infinite loop gifs"""
+
     @re_botcmd(pattern=r"infinite loop", prefixed=False, flags=re.IGNORECASE)
     def listen_for_infinite_loop(self, msg, match):
         GIF_URLS= [
