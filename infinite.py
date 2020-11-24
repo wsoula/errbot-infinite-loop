@@ -109,4 +109,4 @@ class Infinite(BotPlugin):
             "http://i.kinja-img.com/gawker-media/image/upload/s--2uUb28Wf--/c_fit,f_auto,fl_progressive,q_80,w_320/a7ivhrf1ehk8ev9paiyw.gif",
             "https://i.kinja-img.com/gawker-media/image/upload/s--bu1J-vuP--/c_scale,fl_progressive,q_80,w_800/kset0dgzq20xamvi4td3.gif"
         ]
-        return random.choice(GIF_URLS)
+        self.send_card(in_reply_to=msg, color='white', image=random.choice(GIF_URLS)
